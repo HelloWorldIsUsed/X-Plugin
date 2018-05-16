@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h3>吴明大sb</h3>
     <img src="./assets/logo.png">
     <router-view/>
   </div>
