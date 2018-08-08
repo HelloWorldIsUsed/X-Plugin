@@ -13,15 +13,24 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: './src/index.js'
   },
   output: {
-    path: config.build.assetsRoot,
-    filename: '[name].js',
-    publicPath: process.env.NODE_ENV === 'production'
-      ? config.build.assetsPublicPath
-      : config.dev.assetsPublicPath
-  },
+    path: path.resolve(__dirname, '../dist'),
+    publicPath: '',
+    filename: 'xw-btn.min.min.js',
+    library: 'XwBtn',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
+    },
+    externals: {
+      vue: {
+       root: 'Vue',
+       commonjs: 'vue',
+       commonjs2: 'vue',
+       amd: 'vue'
+      }
+      },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
