@@ -1,12 +1,14 @@
 import XwBtn from './XwBtn.vue'
+import XSlider from './XSlider.vue'
  
-const xwbtn = {
- install: function (Vue) {
- if (typeof window !== 'undefined' && window.Vue) {
-  Vue = window.Vue
- }
- Vue.component('xwbtn', XwBtn)
- }
+const xPlguin = {
+    install: function (Vue) {
+    if (typeof window !== 'undefined' && window.Vue) {
+     Vue = window.Vue
+    }
+    Vue.component('xwbtn', XwBtn)
+    Vue.component('xSlider', XSlider)
+    }
 }
  
-export default xwbtn
+export default xPlguin
