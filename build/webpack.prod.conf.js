@@ -17,8 +17,8 @@ var webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '',
-    filename: 'xw-btn.min.js',
-    library: 'XwBtn',
+    filename: 'x-plugin.min.js',
+    library: 'XPlugin',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
@@ -44,7 +44,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // extract css into its own file
     new ExtractTextPlugin({
-      filename: 'xw-btn.min.css'
+      filename: 'x-plugin.min.css'
     }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.

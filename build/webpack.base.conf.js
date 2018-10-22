@@ -18,8 +18,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '',
-    filename: 'xw-btn.min.min.js',
-    library: 'XwBtn',
+    filename: 'x-plugin.min.js',
+    library: 'XPlugin',
     libraryTarget: 'umd',
     umdNamedDefine: true
     },

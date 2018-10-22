@@ -1,10 +1,10 @@
 {
-  "name": "xw-btn",
+  "name": "x-plugin",
   "version": "1.0.1",
   "description": "A Vue.js project",
   "author": "FourAex <511970747@qq.com>",
   "private": false,
-  "main": "dist/xw-btn.min.js",
+  "main": "dist/x-plugin.min.js",
   "files": [
     "dist",
     "src"
